@@ -1,15 +1,13 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700;900&display=swap');
+
 :root {
   --bg-color: #0a0e11;
   --text-color: #84c677;
-  --accent-color: #84c677;
   --font-family: 'Albert Sans', system-ui, sans-serif;
   --spacing: 1rem;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -38,22 +36,21 @@ main {
   width: 100%;
   max-width: 800px;
 }
-
 section {
   margin-bottom: 2rem;
 }
 
+/* TOOL */
 #tool h2 {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #fff; /* samo ovaj naslov u beloj */
 }
-
 #tool p {
   margin: 0 0 var(--spacing);
   line-height: 1.6;
 }
-
 textarea {
   width: 100%;
   height: 200px;
@@ -62,7 +59,7 @@ textarea {
   border: 1px solid #162027;
   border-radius: 4px;
   background: #11181d;
-  color: var(--text-color);
+  color: #fff; /* tekst u boxu sada beo */
   resize: vertical;
 }
 
@@ -72,30 +69,50 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: var(--spacing);
 }
-
-.results div {
+.result-item {
   background: #11181d;
   padding: var(--spacing);
   border-radius: 4px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.result-label {
+  font-size: 1rem;
   font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+.result-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
 }
 
+/* WHY COUNT */
+#about h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing);
+  color: #fff;
+}
 #about p {
   margin: 0 0 1rem;
   line-height: 1.6;
 }
 
+/* FAQ */
 #faq h2 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing);
+  color: #fff;
 }
-
 .faq-item {
   border-top: 1px solid #162027;
 }
-
 .faq-question {
   width: 100%;
   background: none;
@@ -110,22 +127,31 @@ textarea {
   font-weight: 700;
   cursor: pointer;
 }
-
 .faq-question .arrow {
   transition: transform 0.2s ease;
   font-size: 1.2rem;
 }
-
 .faq-answer {
   display: none;
   padding: 0 0 1rem;
-  color: var(--text-color);
+  color: #fff; /* odgovori sad u beloj */
+  line-height: 1.6;
 }
-
 .faq-item.open .faq-answer {
   display: block;
 }
-
 .faq-item.open .faq-question .arrow {
   transform: rotate(180deg);
+}
+
+/* PAGE NAV */
+.page-nav {
+  text-align: center;
+  margin: var(--spacing) 0;
+}
+.page-nav a {
+  margin: 0 var(--spacing);
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
 }
