@@ -45,7 +45,7 @@ section {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #fff; /* samo ovaj naslov u beloj */
+  color: #fff;
 }
 #tool p {
   margin: 0 0 var(--spacing);
@@ -59,7 +59,7 @@ textarea {
   border: 1px solid #162027;
   border-radius: 4px;
   background: #11181d;
-  color: #fff; /* tekst u boxu sada beo */
+  color: #fff;
   resize: vertical;
 }
 
@@ -93,7 +93,7 @@ textarea {
 
 /* WHY COUNT */
 #about h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;      /* izjednačeno sa How to Use */
   font-weight: 700;
   margin-bottom: var(--spacing);
   color: #fff;
@@ -105,7 +105,7 @@ textarea {
 
 /* FAQ */
 #faq h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;      /* izjednačeno sa How to Use */
   font-weight: 700;
   margin-bottom: var(--spacing);
   color: #fff;
@@ -134,7 +134,7 @@ textarea {
 .faq-answer {
   display: none;
   padding: 0 0 1rem;
-  color: #fff; /* odgovori sad u beloj */
+  color: #fff;   /* odgovori sada u beloj */
   line-height: 1.6;
 }
 .faq-item.open .faq-answer {
