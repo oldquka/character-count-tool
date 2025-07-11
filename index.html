@@ -9,7 +9,6 @@
   <meta name="keywords" content="character counter, word counter, text analyzer, online tool, paragraph count, sentence count">
   <link rel="canonical" href="https://character-count-tool.pages.dev/">
   <meta name="robots" content="index,follow">
-
   <!-- Open Graph -->
   <meta property="og:title" content="Free Online Character & Word Counter">
   <meta property="og:description" content="Instantly count characters, words, sentences & paragraphs online—no signup, no limits.">
@@ -17,10 +16,10 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Character Count Tool">
   <meta name="twitter:card" content="summary_large_image">
-
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700;900&display=swap">
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
   {
@@ -34,37 +33,21 @@
     "softwareVersion": "1.0"
   }
   </script>
-
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I count characters and words?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Simply paste or type your text into the input box and see the counts update in real time."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I count paragraphs and sentences?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes—this tool also counts sentences and paragraphs automatically."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is there a limit on text length?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, there are no length limits; you can analyze as much text as your browser can handle."
-        }
-      }
+      {"@type":"Question","name":"How do I count characters and words?","acceptedAnswer":{"@type":"Answer","text":"Simply paste or type your text into the input box and see the counts update in real time."}},
+      {"@type":"Question","name":"Can I count paragraphs and sentences?","acceptedAnswer":{"@type":"Answer","text":"Yes–this tool also counts sentences and paragraphs automatically."}},
+      {"@type":"Question","name":"Is there a limit on text length?","acceptedAnswer":{"@type":"Answer","text":"No, there are no length limits; you can analyze as much text as your browser can handle."}},
+      {"@type":"Question","name":"Does the tool require an internet connection?","acceptedAnswer":{"@type":"Answer","text":"No–because it runs entirely in your browser, you can use it offline once the page has loaded."}},
+      {"@type":"Question","name":"Is my text data stored or shared?","acceptedAnswer":{"@type":"Answer","text":"All processing happens locally on your device; we do not send, store or log any of your text."}},
+      {"@type":"Question","name":"Can I download or export the results?","acceptedAnswer":{"@type":"Answer","text":"You can copy the counts manually now; CSV/JSON export is coming soon."}},
+      {"@type":"Question","name":"Does it work on mobile devices?","acceptedAnswer":{"@type":"Answer","text":"Yes–the interface is fully responsive and optimized for touch on phones, tablets and desktops."}},
+      {"@type":"Question","name":"How does it handle special characters and non-Latin scripts?","acceptedAnswer":{"@type":"Answer","text":"Every Unicode character is counted, so accents, emojis and non-Latin scripts all register accurately."}},
+      {"@type":"Question","name":"Can I customize the counting rules?","acceptedAnswer":{"@type":"Answer","text":"Not yet–we use standard rules now but plan user-configurable options in a future update."}}
     ]
   }
   </script>
@@ -72,19 +55,12 @@
 <body>
   <header>
     <h1>Character & Word Counter</h1>
-    <nav>
-      <ul>
-        <li><a href="#tool">Tool</a></li>
-        <li><a href="#how-to">How to Use</a></li>
-        <li><a href="#why-count">Why Count?</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
   </header>
-
   <main>
     <!-- TOOL SECTION -->
     <section id="tool">
+      <h2>How to Use</h2>
+      <p>Paste or type your text into the box below. The tool will automatically display counts for characters, spaces, words, sentences, and paragraphs in real time.</p>
       <textarea id="inputText" placeholder="Paste or type your text here..."></textarea>
       <div class="results">
         <div><strong>Characters:</strong> <span id="charCount">0</span></div>
@@ -95,40 +71,114 @@
       </div>
     </section>
 
-    <!-- HOW TO USE -->
-    <section id="how-to">
-      <h2>How to Use</h2>
-      <p>Paste or type your text into the box above. The tool will automatically display counts for characters, spaces, words, sentences, and paragraphs in real time.</p>
-    </section>
-
-    <!-- WHY COUNT -->
-    <section id="why-count">
-      <h2>Why Count?</h2>
-      <ul>
-        <li><strong>Social Media Limits:</strong> Ensure your tweets, Instagram captions, or SMS fit within platform constraints.</li>
-        <li><strong>Academic & SEO:</strong> Meet word count requirements for essays, articles, or meta descriptions.</li>
-        <li><strong>Content Editing:</strong> Track length and structure for readability and consistency.</li>
-      </ul>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p>Our Character & Word Counter isn’t just another bloated text analyzer - it’s a lean, lightning-fast utility that gives you exactly what you need (and nothing you don’t). 100% free, entirely client-side, and built with performance in mind, this tool measures characters, spaces, words, sentences, and paragraphs in real time, without a single server call or signup requirement. If you’ve ever lost precious minutes wrestling with slow, over-engineered editors, you’ll appreciate how refreshingly simple and reliable this is.</p>
+      <p>How it works is delightfully straightforward: just paste or type your text into the box above, and watch the counts update instantly. No buttons to press, no waiting for a page reload, and no hidden limits on text length - as long as your browser can handle it, so can this tool. The moment you hit “space” or “enter,” you’ll see every character and word accounted for, along with a running tally of sentences and paragraphs.</p>
+      <p>In today’s world, strict character and word limits are everywhere. Think beyond Twitter’s familiar 280-character cap: most SMS apps, Facebook posts, Pinterest descriptions, Yelp reviews, Reddit titles, eBay listings, and even LinkedIn headlines enforce hard limits. By seeing your counts as you type, you stay in control - never accidentally cut off your message or waste words padding your content.</p>
+      <p>For students and academics, word-count requirements can make or break an assignment. Meeting minimums and staying under maximums proves you can follow guidelines, which often accounts for a significant portion of your grade. Our tool ensures you comply with essay prompts, college-application personal statements, or abstract submissions without guesswork.</p>
+      <p>Professional writers working under tight spatial constraints - whether for magazines, newspapers, or ad copy - know that every character counts. You can experiment with fonts and line spacing, but it’s critical to know exactly how much text will fit your layout. This counter gives you immediate feedback, helping you craft the perfect headline, Instagram caption, or meta description without a second thought.</p>
+      <p>Job seekers, too, rely on character-restricted formats: a concise, one-page résumé or a LinkedIn summary that hooks recruiters. Rather than fiddling endlessly with margins and font sizes, use our counter to fine-tune your content until it fits just right. It’s the simplest way to guarantee that your most important details never get truncated.</p>
+      <p>Beyond raw counts, our tool is a powerful aid for anyone who cares about clarity and precision. Marketers refining ad copy, developers writing commit messages, or novelists sketching out chapters can all benefit from knowing their exact text length. And because it runs entirely in your browser, you enjoy maximum privacy and the ability to work offline - perfect for flights or low-connectivity zones.</p>
+      <p>We’ve designed this tool with a minimalist, mobile-first philosophy: clean interface, rapid response, and accessibility at its core. No ads, no trackers, no pop-ups - just you and your words. In future updates, we’re planning added features like readability scoring, downloadable reports, and even integration as a browser extension or PWA. But right now, why wait? Paste your text in and experience the freedom of precise, instantaneous text analysis. It’s on you to write - it’s on us to count.</p>
     </section>
 
     <!-- FAQ SECTION -->
     <section id="faq">
       <h2>Frequently Asked Questions</h2>
+
       <div class="faq-item">
-        <h3>How do I count characters and words?</h3>
-        <p>Simply paste or type your text into the input box and see the counts update in real time.</p>
+        <button class="faq-question">
+          <span>How do I count characters and words?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Simply paste or type your text into the input box and watch the counts update instantly. There is no need to press any button or reload the page - as you type, every character and word is tallied in real time.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>Can I count paragraphs and sentences?</h3>
-        <p>Yes—this tool also counts sentences and paragraphs automatically.</p>
+        <button class="faq-question">
+          <span>Can I count paragraphs and sentences?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes - this tool automatically parses your text to identify sentence terminators (., !, ?) and line breaks, so you get an accurate sentence and paragraph count. It’s ideal for checking structure in essays, reports or posts.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>Is there a limit on text length?</h3>
-        <p>No, there are no length limits; you can analyze as much text as your browser can handle.</p>
+        <button class="faq-question">
+          <span>Is there a limit on text length?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>No - there are no enforced length limits. You can analyze as much text as your browser’s memory allows, making it suitable for everything from short tweets to full-length documents.</p>
+        </div>
       </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Does the tool require an internet connection?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>No - because it runs entirely in your browser, you can use it offline once the page has loaded. It’s perfect for flights, remote locations or any time you have spotty connectivity.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is my text data stored or shared?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely not - all processing happens locally on your device. We do not send, store or log any of your text, so your content remains private and secure at all times.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I download or export the results?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Currently you can copy the counts manually, but we’re planning a downloadable CSV/JSON export feature in a future update. For now, simply select the numbers and paste them wherever you need.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Does it work on mobile devices?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes - the interface is fully responsive and optimized for touch. Whether you’re on a phone, tablet or desktop, the textarea and result cards adjust seamlessly to your screen size.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How does it handle special characters and non-Latin scripts?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>We count every Unicode character individually, so accents, emojis or characters from any language are all included in your totals. This makes it reliable for multilingual text and creative writing.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I customize the counting rules?</span>
+          <span class="arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+          <p>At the moment the tool uses a standard set of rules (spaces split words, punctuation ends sentences, blank lines start paragraphs). We’re exploring user-configurable options in a later version to let you tweak those rules.</p>
+        </div>
+      </div>
+
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>

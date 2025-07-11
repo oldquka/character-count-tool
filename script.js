@@ -1,5 +1,6 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
+  // Text counting logic
   const textarea = document.getElementById('inputText');
   const charCountEl = document.getElementById('charCount');
   const spaceCountEl = document.getElementById('spaceCount');
@@ -26,4 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   textarea.addEventListener('input', updateCounts);
   updateCounts();
+
+  // FAQ accordion logic
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
 });
