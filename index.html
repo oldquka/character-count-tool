@@ -1,26 +1,134 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Online Character & Word Counter</title>
-  <meta name="description" content="Instantly count characters, words, sentences & paragraphs online—no signup, no limits.">
+  <title>Free Online Character & Word Counter – Count Characters, Words, Sentences & Paragraphs</title>
+  <meta name="description" content="Instantly count characters, words, sentences & paragraphs online—no signup, no limits. Perfect for writers, students & social media posts.">
+  <meta name="keywords" content="character counter, word counter, text analyzer, online tool, paragraph count, sentence count">
+  <link rel="canonical" href="https://character-count-tool.pages.dev/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Online Character & Word Counter">
+  <meta property="og:description" content="Instantly count characters, words, sentences & paragraphs online—no signup, no limits.">
+  <meta property="og:url" content="https://character-count-tool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Character Count Tool">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Character & Word Counter",
+    "url": "https://character-count-tool.pages.dev/",
+    "applicationCategory": "Utilities",
+    "operatingSystem": "Web",
+    "description": "Instantly count characters, words, sentences & paragraphs online—no signup, no limits.",
+    "softwareVersion": "1.0"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I count characters and words?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply paste or type your text into the input box and see the counts update in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I count paragraphs and sentences?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes—this tool also counts sentences and paragraphs automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a limit on text length?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, there are no length limits; you can analyze as much text as your browser can handle."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1>Character & Word Counter</h1>
+    <nav>
+      <ul>
+        <li><a href="#tool">Tool</a></li>
+        <li><a href="#how-to">How to Use</a></li>
+        <li><a href="#why-count">Why Count?</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
-    <textarea id="inputText" placeholder="Paste or type your text here..."></textarea>
-    <div class="results">
-      <div><strong>Characters:</strong> <span id="charCount">0</span></div>
-      <div><strong>Spaces:</strong> <span id="spaceCount">0</span></div>
-      <div><strong>Words:</strong> <span id="wordCount">0</span></div>
-      <div><strong>Sentences:</strong> <span id="sentenceCount">0</span></div>
-      <div><strong>Paragraphs:</strong> <span id="paragraphCount">0</span></div>
-    </div>
+    <!-- TOOL SECTION -->
+    <section id="tool">
+      <textarea id="inputText" placeholder="Paste or type your text here..."></textarea>
+      <div class="results">
+        <div><strong>Characters:</strong> <span id="charCount">0</span></div>
+        <div><strong>Spaces:</strong> <span id="spaceCount">0</span></div>
+        <div><strong>Words:</strong> <span id="wordCount">0</span></div>
+        <div><strong>Sentences:</strong> <span id="sentenceCount">0</span></div>
+        <div><strong>Paragraphs:</strong> <span id="paragraphCount">0</span></div>
+      </div>
+    </section>
+
+    <!-- HOW TO USE -->
+    <section id="how-to">
+      <h2>How to Use</h2>
+      <p>Paste or type your text into the box above. The tool will automatically display counts for characters, spaces, words, sentences, and paragraphs in real time.</p>
+    </section>
+
+    <!-- WHY COUNT -->
+    <section id="why-count">
+      <h2>Why Count?</h2>
+      <ul>
+        <li><strong>Social Media Limits:</strong> Ensure your tweets, Instagram captions, or SMS fit within platform constraints.</li>
+        <li><strong>Academic & SEO:</strong> Meet word count requirements for essays, articles, or meta descriptions.</li>
+        <li><strong>Content Editing:</strong> Track length and structure for readability and consistency.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How do I count characters and words?</h3>
+        <p>Simply paste or type your text into the input box and see the counts update in real time.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I count paragraphs and sentences?</h3>
+        <p>Yes—this tool also counts sentences and paragraphs automatically.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there a limit on text length?</h3>
+        <p>No, there are no length limits; you can analyze as much text as your browser can handle.</p>
+      </div>
+    </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
